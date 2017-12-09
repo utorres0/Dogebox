@@ -1,0 +1,242 @@
+
+
+
+*{margin:0;padding:0}
+
+body{
+    background: #ffffff;
+    background-image:url("../img/bg4.png");
+
+
+
+}
+
+th.bco {color: #f2f2f2;}
+
+td.bco {color: #f2f2f2;}
+
+
+
+
+/* Estilo para fondo de formulario login*/
+.fondologin { height: 315px;
+              width: 350px;
+              background: transparent url("../img/bg2.png") repeat;
+
+}
+
+/* Estilo para fondo de formulario registro*/
+.fondoregistro { height: 525px;
+                 width: 350px;
+                 background: transparent url("../img/bg2.png") repeat;
+
+}
+
+/* Estilo para imagen 1*/
+.roundtest{
+    background-image:url("../img/DogWriting.jpg");
+    background-size: contain;;
+    background-color:red;
+    width:225px;
+    height:225px;
+    border-top-left-radius: 45px 40px;
+    border-top-right-radius: 45px 40px;
+    border-bottom-left-radius: 45px 40px;
+    border-bottom-right-radius: 45px 40px;
+}
+
+.giftest{
+    background-image: url("../img.giphy.gif");
+
+}
+
+/* Estilo de letras formulario login*/
+
+h1{
+    font-family:'Josefin Sans';
+    color:#f2f2f2;
+    font-size: 35px;
+
+}
+
+h1b{
+    font-family:'Josefin Sans';
+    color:#f2f2f2;
+    font-size: 18px;
+
+}
+
+h2{
+    font-family:'Roboto';
+    color:#f2f2f2;
+
+}
+
+h3{
+    font-family:'Roboto';
+    color:#000001;
+
+}
+
+
+
+
+header{
+
+    width:100%;
+    overflow:hidden;
+    background:#008080;
+
+    margin-bottom:20px ;
+}
+
+.wrapper {
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    overflow:hidden; 
+}
+
+header .logo{
+    font-family: 'masqueregular';
+    color:#f2f2f2;	
+    font-size:50px;
+    line-height:200px;
+    float:left; 
+}
+
+header nav{
+    float:right;
+    line-height:200px;
+
+}
+
+header nav a{
+    display:inline-block;
+    color:#FAAC58;
+    text-decoration:none;
+    padding:10px 20px;
+    line-height:normal;
+    font-family:'Muli';
+
+    font-size:20px;
+    font-weight:bold;  
+
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+
+}
+
+header nav a:hover {
+
+    background:#f2f2f2;
+    border-radius:50px; 
+}
+
+.header2{
+    position:fixed;
+    height:100px;
+
+}
+
+.header2 .logo{
+    line-height:100px;
+    font-size:30px;
+
+}
+
+.header2 nav {
+    line-height:100px; 
+}
+
+
+/*.contenido{
+        padding-top:100px;   lo quitamos porque se resuelve con javascript
+} */
+.contenido p{
+    margin-bottom:1em; 
+}
+.footer {
+    position:static;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+
+}
+
+.SubmitFile
+{
+    background-image: 	url("../img/login.png");
+    background-repeat:	no-repeat;
+    background-color:	transparent;
+
+    border:			none;
+    text-indent:		-999em;
+}
+
+.fsSubmitButton2
+{
+    background-image: 	url("../img/login.png");
+    background-repeat:	no-repeat;
+    background-color:	transparent;
+
+    border:			none;
+    text-indent:		-999em;
+}
+.fsSubmitButton
+{
+    font-family: 'Muli';
+    border-top:		2px solid #a3ceda;
+    border-left:		2px solid #a3ceda;
+    border-right:		2px solid #4f6267;
+    border-bottom:		2px solid #4f6267;
+    padding:		10px 20px !important;
+    font-size:		14px !important;
+    background-color:	#c4f1fe;
+    font-weight:		bold;
+    color:			#2d525d;
+}
+
+@media screen and (max-width:950px){
+    header.logo,
+    header nav{
+        width: 100%;
+        text-align:center;
+        line-height:100px; 
+    }
+
+    .header2 {
+        height:auto;
+    }
+
+    .header2 .logo,
+    .header2 nav{
+        line-height:50px;
+    }
+
+
+    .redondo img {
+        border-radius: 18px 18px 18px 18px;
+        -moz-border-radius: 18px 18px 18px 18px;
+        -webkit-border-radius: 18px 18px 18px 18px;
+        border: 0px solid #000000;
+    }
+
+
+    @font-face {
+        font-family: 'masqueregular';
+        src: url('masque__-webfont.woff2') format('woff2'),
+            url('masque__-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+}
+
+
+
