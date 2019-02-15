@@ -19,7 +19,7 @@ import org.apache.http.util.EntityUtils;
 public abstract class Acortador {
 
     public static String acortar(String urlLarga) throws IOException {
-        HttpPost post = new HttpPost("https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyBaXVHCGHYY3Zy97HXP8WCm1d0le1Uesd8");
+        /*HttpPost post = new HttpPost("https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyBaXVHCGHYY3Zy97HXP8WCm1d0le1Uesd8");
         String urlCorta="";
         post.setHeader(
                 "Content-Type", "application/json");
@@ -32,9 +32,10 @@ public abstract class Acortador {
         JsonReader jsonReader = Json.createReader(new StringReader(responseText));
         JsonObject object = jsonReader.readObject();
         urlCorta =object.getString("id");
-        jsonReader.close();
+        jsonReader.close();*/
+        System.out.println("EL ACORTADOR SE QUITO");
 
-        return urlCorta;
+        return urlLarga;
     }
 
 }

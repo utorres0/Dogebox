@@ -59,9 +59,9 @@ public class RegistrarSubida {
         Conexion c = new Conexion();
 
         PreparedStatement sql = c.conecta().prepareStatement("INSERT INTO "
-                + "archivos(AR_Nombre,AR_Tamano,ar_url,ar_tipo,ar_accesos_Totales,ar_descargas_Totales,"
-                + "ar_hora_Subida,ar_fechaSubida,ar_hora_Expiracion,ar_fecha_Expiracion,ar_status,"
-                + "ar_archivo_Subido_Registrado,ar_zelda,ar_zelda_Corto,ar_password) "
+                + "archivos(AR_Nombre,AR_Tamano,AR_URL,AR_Tipo,AR_Accesos_totales,AR_Descarga_totales,"
+                + "AR_Hora_subida,AR_Fecha_subida,AR_Hora_Expiracion,AR_Fecha_Expiracion,AR_Status,"
+                + "AR_ArchivoSubido_Registrado,AR_Zelda,AR_ZeldaCorto,AR_Password) "
                 + "VALUES "
                 + "(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 

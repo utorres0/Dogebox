@@ -28,7 +28,7 @@ public class Correos {
 
     private final Properties properties = new Properties();
 
-    private final String password = "dogebox1";
+    private final String password = "RETACApapa1";
     private final String user = "dogebox.adm@gmail.com";
 
     private Session session;
@@ -136,7 +136,8 @@ public class Correos {
             Transport.send(message);
 
         } catch (MessagingException e) {
-            return e.getCause().toString();
+            return "No se envio el correo";
+            
         }
         return "Mensaje Enviado con exito<br>"
                 + "<a href=\"index.jsp\"/>Regresar a incio</a>";

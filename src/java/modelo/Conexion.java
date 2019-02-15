@@ -6,38 +6,34 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 /**
- *
- * @author oneee
+ * Clase para realizar la conexion a la DB
+ * @author Ubaldo Torres Juarez
  */
 public class Conexion {
 
-    static final String controlador = "com.mysql.jdbc.Driver";
-    static final String direccion = "jdbc:mysql://localhost:3306/integrador?useUnicode=true&characterEncoding=utf-8";
-    static final String usuario = "root";
-    static final String contrasena = "";
+    static final String CONTROLADOR = "com.mysql.jdbc.Driver";
+    static final String DIRECCION = "jdbc:mysql://localhost:3306/integrador?useUnicode=true&characterEncoding=utf-8&useSSL=false";
+    static final String USUARIO = "dogebox";
+    static final String PASS = "15086247";
 
     Connection conexion;
 
     public Connection conecta() {
 
         try {
-            Class.forName(controlador);
+            Class.forName(CONTROLADOR);
         } catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());
         }
         try {
-            conexion = DriverManager.getConnection(
-                    direccion, usuario, contrasena);
+            conexion = DriverManager.getConnection(DIRECCION, USUARIO, PASS);
             
             return conexion;
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
         return conexion;
@@ -58,17 +54,6 @@ public class Conexion {
         return rs;
     }
 
-//    public void ejecuta(String sql) {
-//        if (conexion == null) {
-//            System.out.println("No hay conexión con la base de datos");
-//        } else {
-//            try {
-//                .executeUpdate(sql);
-//            } catch (Exception e) {
-//                System.out.println("Error al ejecutar sentencia " + e.toString());
-//            }
-//        }
-//    }
     public void ejecutaPS(PreparedStatement sql) {
         if (conexion == null) {
             System.out.println("No hay conexión con la base de datos");
